@@ -7,12 +7,62 @@
     padding: 0;
 }
 
+.container-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.border-card {
+    border-radius: 10%;
+}
+
+.padding-container {
+    padding: 2rem 1rem;
+}
+
+.btn {
+    border-radius: 25px;
+    display: inline-block;
+    padding: 0.5rem;
+    background-color: rgba(0,132,253,255);
+    text-decoration: none;
+    color: rgba(206,231,254,255);
+}
+
 /************* DEBUG *************/
+
+.dbg-height section {
+    height: 30rem;
+    background-color: green;
+}
 
 /************* IMPOSTAZIONI SPECIFICHE *************/
 
 /************* HEADER *************/
 
+nav {
+    background-color: rgba(0,132,253,255);
+}
+
+.nav-menù {
+    display: none;
+}
+
+.logo,
+.menù {
+    padding: 1rem;
+}
+
 /************* MAIN *************/
+/************* RISORSE DEL PACCHETTO *************/
+.card {
+    background-color: rgba(181,221,255,255);
+    padding: 1rem;
+    margin-bottom: 1rem;
+     height: 10rem; /* DA TOGLIERE */
+}
+
 
 /************* FOOTER *************/
+
+/************* MEDIA QUERIES *************/

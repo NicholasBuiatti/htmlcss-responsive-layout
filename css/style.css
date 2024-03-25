@@ -16,8 +16,17 @@
     border-radius: 10%;
 }
 
-.padding-container {
-    padding: 2rem 1rem;
+.pdg-container {
+    padding: 2rem 0;
+}
+
+.mrg-container {
+    margin: 0 auto;
+}
+
+section:nth-child(even) {
+    /* background-color: rgba(151,146,228,255); */
+    background-color: red;
 }
 
 .btn {
@@ -31,10 +40,10 @@
 
 /************* DEBUG *************/
 
-.dbg-height section {
+/* .dbg-height section {
     height: 30rem;
     background-color: green;
-}
+} */
 
 /************* IMPOSTAZIONI SPECIFICHE *************/
 
@@ -55,14 +64,97 @@ nav {
 
 /************* MAIN *************/
 /************* RISORSE DEL PACCHETTO *************/
+.resource-package {
+    width: 90%;
+}
+
 .card {
     background-color: rgba(181,221,255,255);
-    padding: 1rem;
+    padding: 0 1rem;
     margin-bottom: 1rem;
      height: 10rem; /* DA TOGLIERE */
 }
 
+/************* STRATEGIA *************/
+.strategy {
+    width: 90%;
+}
+
+.strategy > .card {
+    background-color: unset;
+}
+
+.strategy > .card-white {
+    background-color: white;
+}
+
+/************* CONSIGLI *************/
+.advise {
+    width: 90%;
+}
+
+/************* BENEFIT *************/
+.benefit {
+    width: 90%;
+}
+
+.benefit > .card {
+    background-color: white;
+}
+
+/************* ABOUT US *************/
+.about-us {
+    width: 90%;
+}
+
+/************* INFO *************/
+.info {
+    width: 90%;
+}
 
 /************* FOOTER *************/
+footer {
+    background-color: rgba(51,51,51,255);
+}
+
+.end-page {
+    width: 90%;
+}
+
 
 /************* MEDIA QUERIES *************/
+
+@media screen and (min-width: 480px) {
+    body {
+        background-color: yellow;
+    }
+}
+
+@media screen and (min-width: 760px) {
+    body {
+        background-color: red;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************* BACKGROUND DA TOGLIERE *************/
+.info {
+    background-color: green;
+}
+.who {
+    background-color: blue;
+}
+.end-page {
+    background-color: white;
+}

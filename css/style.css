@@ -44,7 +44,6 @@ h3 {
 }
 
 p {
-    /* line-height: 1.8rem;  */
     padding: 1rem 0;
 }
 
@@ -64,13 +63,24 @@ p {
 
 /************* IMPOSTAZIONI SPECIFICHE *************/
 /************* HEADER *************/
-
 nav {
     background-color: rgba(0,132,253,255);
 }
 
 .nav-menù {
     display: none;
+}
+
+.nav-menù > a {
+    color: lightblue;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+.nav-menù > .btn {
+    color: lightblue;
+    background-color: white;
+    padding: 0.5rem 1rem;
 }
 
 header > .container-flex {
@@ -84,6 +94,10 @@ header > .container-flex {
 
 .img-logo {
     width: 70%;
+}
+
+.fa-bars {
+    font-size: 2rem;
 }
 
 /************* MAIN *************/
@@ -176,8 +190,6 @@ img {
     width: 100%;
     margin-bottom: 2rem;
 }
-
-
 
 /************* CONSIGLI *************/
 .advise {
@@ -370,17 +382,13 @@ footer {
     }
 
     /************* INFO *************/
-    
     .info {
         width: 60%;
     }
 
     .who {
         width: 40%;
-    }
-
-    /************* FOOTER *************/
-    
+    }   
 }
 
 @media screen and (min-width: 760px) {
@@ -421,7 +429,6 @@ footer {
     }
 
     /************* RISORSE DEL PACCHETTO *************/
-
     .first-card {
         display: flex;
         flex-direction: row;
@@ -441,7 +448,6 @@ footer {
     }
 
     /************* CONSIGLI *************/
-
     .testimonial-card {
         width: 70%;
         margin: 1rem auto;
@@ -459,11 +465,9 @@ footer {
     /************* BENEFICI *************/
     .benefit > .card {
         width: calc(100% / 3 - 1rem);
-    
     }
 
     /************* ABOUT US *************/
-    
     .info > h1 {
         font-size: 4rem;
     }
@@ -498,10 +502,6 @@ footer {
     .info-download > p {
         margin: 1rem 2rem;
     }
-
-    /************* FOOTER *************/
-
-
 }   
 
 /************* BACKGROUND DA TOGLIERE *************/

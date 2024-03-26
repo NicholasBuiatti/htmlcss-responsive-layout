@@ -25,8 +25,7 @@
 }
 
 section:nth-child(even) {
-    /* background-color: rgba(151,146,228,255); */
-    background-color: red;
+    background-color: rgba(151,146,228,255);
 }
 
 h1 {
@@ -45,7 +44,7 @@ h3 {
 }
 
 p {
-    /* line-height: 2rem;  */
+    /* line-height: 1.8rem;  */
     padding: 1rem 0;
 }
 
@@ -74,9 +73,17 @@ nav {
     display: none;
 }
 
+header > .container-flex {
+    align-items: center;
+}
+
 .logo,
 .menù {
     padding: 1rem;
+}
+
+.img-logo {
+    width: 70%;
 }
 
 /************* MAIN *************/
@@ -96,6 +103,20 @@ nav {
     text-align: center;
     padding: 0.5rem 3rem;
     font-weight: 1000;
+}
+
+.first-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.first-card > div {
+    text-align: center;
+}
+
+img {
+    width: 100%;
 }
 
 .fa-apple {
@@ -130,13 +151,33 @@ nav {
 }
 
 .card-white > .btn {
-    padding: 0.5rem;
     color: black;
+    width: 15%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    padding: 0;
+    position: relative;
+}
+
+.fa-arrow-down {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
 }
 
 .strategy h2 {
     text-align: start;
+    color: white;
 }
+
+#strategy-photo-1 {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+
 
 /************* CONSIGLI *************/
 .advise {
@@ -144,9 +185,31 @@ nav {
     text-align: center;
 }
 
+.advise > .card {
+    padding: 1rem;
+}
+
+.testimonial-card > img {
+    display: block;
+    width: 6rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.name > p {
+    font-size: 0.8rem;   
+}
+
 /************* BENEFIT *************/
 .benefit {
     width: 90%;
+}
+
+.benefit > h1 {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 3rem;
 }
 
 .benefit > .card {
@@ -173,13 +236,6 @@ nav {
     width: 90%;
 }
 
-
-
-/************* INFO *************/
-.info {
-    width: 90%;
-}
-
 .info > h1 {
     text-align: start;
     color: rgba(0,132,253,255);
@@ -191,22 +247,74 @@ nav {
     font-size: 0.7rem;
 }
 
+.about-us-img {
+    width: 10rem;
+    position: relative;
+}
+
+.fa-quote-left {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 3.5rem;
+    color: rgba(0,132,253,255);
+}
+
+.about-us-img > img {
+    display: block;
+    width: 10rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+
+/************* INFO-DOWNLOAD *************/
+.info-download {
+    width: 90%;
+    text-align: center;
+}
+
+.info-download > h3 {
+    color: rgba(195,192,239,255);
+}
+
+.info-download > h2 {
+    color: white;
+}
+
+.info-download > h1 {
+    font-size: 3rem;
+    color: rgba(253,193,95,255);
+}
+
+.info-download > .btn {
+    background-color: white;
+    color: rgba(0,132,253,255);
+}
+
+.info-download > address,
+.info-download a {
+    color: white;
+}
+
 /************* FOOTER *************/
 footer {
     background-color: rgba(51,51,51,255);
+    text-align: center;
+    color: white;
 }
 
 .end-page {
-    width: 90%;
+    width: 90%;   
 }
 
 
 /************* MEDIA QUERIES *************/
 
 @media screen and (min-width: 480px) {
-    body {
+    /* body {
         background-color: yellow;
-    }
+    } */
 
     .info,
     .end-page {
@@ -216,12 +324,16 @@ footer {
     /************* RISORSE DEL PACCHETTO *************/
     .resource-package {
         display: grid;
-        grid-template-columns: repeat(3, calc(100% / 3 - 0.5rem));
+        grid-template-columns: repeat(3, calc(100% / 3 - 0.7rem));
         gap: 1rem;
     }
 
     .first-card {
         grid-column: 1/3;
+    }
+
+    .first-card > div {
+        text-align: unset;
     }
 
     .resource-package > .card {
@@ -231,7 +343,8 @@ footer {
     /************* CONSIGLI *************/
     .advise > .card {
         display: flex;
-        gap: 1rem;
+        align-items: center;
+        justify-content: space-between;
     }
 
     /************* BENEFIT *************/
@@ -258,25 +371,32 @@ footer {
 
     /************* INFO *************/
     
+    .info {
+        width: 60%;
+    }
+
+    .who {
+        width: 40%;
+    }
 
     /************* FOOTER *************/
     
 }
 
 @media screen and (min-width: 760px) {
-    body {
+    /* body {
         background-color: red;
-    }
+    } */
     
     .resource-package,
     .strategy,
     .advise,
     .benefit,
     .about-us {
-        max-width: 1200px;
+        max-width: 1100px;
     }
 
-    .info,
+    .info-download,
     .end-page {
         max-width: 600px;
     }
@@ -287,7 +407,7 @@ footer {
     }
     
     nav {
-        max-width: 1200px;
+        max-width: 1100px;
         margin: 0 auto;
     }
     
@@ -301,6 +421,31 @@ footer {
     }
 
     /************* RISORSE DEL PACCHETTO *************/
+
+    .first-card {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .text-first-card {
+        width: 50%;
+    } 
+
+    .img-box {
+        align-self: flex-end;
+        max-width: 18rem;
+    }
+
+    .img-box > img {
+        width: 100%;
+    }
+
+    /************* CONSIGLI *************/
+
+    .testimonial-card {
+        width: 70%;
+        margin: 1rem auto;
+    }
 
     /************* STRATEGY *************/
     .strategy {
@@ -317,25 +462,50 @@ footer {
     
     }
 
-    .about-us {
-        justify-content: center;
+    /************* ABOUT US *************/
+    
+    .info > h1 {
+        font-size: 4rem;
     }
-}
+
+    .info > p {
+        font-size: 1.5rem;
+    }
+
+    .info {
+        width: 75%;
+    }
+
+    .who {
+        width: 25%;
+        text-align: center;
+    }
+    
+    .who > img {
+        margin: 1rem auto;
+    }
+
+    /************* INFO-DOWNLOAD *************/
+
+    .info-download > h2 {
+        font-size: 3rem;
+    }
+
+    .info-download > h1 {
+        font-size: 5rem;
+    }
+
+    .info-download > p {
+        margin: 1rem 2rem;
+    }
+
+    /************* FOOTER *************/
 
 
-
-
-
-
-
-
-
-
-
-
+}   
 
 /************* BACKGROUND DA TOGLIERE *************/
-.info {
+/* .info {
     background-color: green;
 }
 .who {
@@ -343,4 +513,4 @@ footer {
 }
 .end-page {
     background-color: white;
-}
+} */
